@@ -1,0 +1,105 @@
+//== Widget Area
+
+.sidebar {
+	padding: 30px;
+	background-color: #1e1e1e;
+	color: #c1c0c0;
+	font-size: 14px;
+
+	select {
+		color: #000;
+	}
+
+	.widget {
+		margin-bottom: 45px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+			display: block;
+			padding: 10px 0;
+			border-bottom: 1px solid darken(#1e1e1e, 3%);
+		}
+
+		a {
+			color: #c1c0c0;
+		}
+	}
+
+}
+
+.widget-title {
+	margin-top: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.widget_archive, .widget_categories {
+	ul {
+		li:before {
+			margin-right: 10px;
+		}
+	}
+}
+
+.widget_categories {
+	ul {
+		li:before {
+			@include icon-set("\e118");
+		}
+	}
+}
+
+.widget_archive {
+	ul {
+		li:before {
+			@include icon-set("\e109");
+		}
+	}
+}
+
+#wp-calendar {
+	width: 100%;
+
+	thead, tbody {
+		td {
+			text-align: center;
+		}
+	}
+
+	tbody {
+		tr:nth-child(odd) {
+			td {
+				background-color: darken(#1e1e1e, 3%);
+			}
+		}
+	}
+
+	tfoot {
+		#prev {
+			text-align: left;
+		}
+		#next {
+			text-align: right;
+		}
+	}
+
+	thead, tbody, tfoot {
+		td, th {
+			padding: 5px;
+		}
+	}
+}
+
+//== Footer Area
+
+.footer-area {
+	text-align: center;
+	margin: 25px 0;
+	color: #c1c0c0;
+}

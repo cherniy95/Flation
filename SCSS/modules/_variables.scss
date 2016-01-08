@@ -1,0 +1,70 @@
+//== Colors
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+$body-bg: #343434;
+
+$text-color: #636467;
+
+$link-color: #38b49d;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+
+//== Typography
+
+$font-size-base: 16px;
+$font-family-sans-serif:  "Lato", Arial, sans-serif;
+$font-family-base:        $font-family-sans-serif;
+
+//== Iconography
+//
+ 
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "fonts/");
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-default-color: #fff;
+$btn-default-bg: $link-color;
+
+//== Navbar
+//
+//##
+
+//=== Inverted navbar
+
+$navbar-default-border: none;
+
+$navbar-inverse-color: #ffffff;
+$navbar-inverse-bg: #2b2b2b;
+$navbar-inverse-border: none;
+
+$navbar-inverse-link-color: #ffffff;
+$navbar-inverse-link-active-bg: $link-color;
+
+$navbar-inverse-brand-color: #ffffff;
+
+$navbar-inverse-toggle-hover-bg: $link-color;
+$navbar-inverse-toggle-icon-bar-bg: #ffffff;
+
+//== Pagination
+//
+//##
+
+$pagination-color: #ffffff;
+$pagination-bg: #2b2b2b;
+$pagination-border: #2b2b2b;
+
+$pagination-hover-color: $pagination-color;
+$pagination-hover-bg: $link-color;
+$pagination-hover-border: $link-color;
+
+$pagination-active-color: $pagination-color;
+$pagination-active-bg: $link-color;
+$pagination-active-border: $link-color;

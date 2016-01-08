@@ -1,0 +1,115 @@
+.comments-area {
+	background-color: #fff;
+	padding: 20px 25px;
+
+	.comments-title {
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+
+	.comment-list {
+		padding-left: 0;
+	}
+
+	.comment {
+		list-style-type: none;
+		padding-left: 50px;
+
+		.children {
+			padding: 0;
+
+			.comment {
+				padding-left: 25px;
+
+				.avatar {
+					//left: -25px;
+				}
+			}
+		}
+
+		.comment-wrap {
+			position: relative;
+			margin-bottom: 25px;
+		}
+
+		.avatar {
+			position: absolute;
+			top: 0;
+			left: -50px;
+			width: 36px;
+			height: 36px;
+		}
+
+		.reply {
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			.comment-reply-link {
+				@extend .btn-def;
+				font-size: 14px;
+			}
+		}
+
+	}
+
+	.fn {
+		font-style: normal;
+		color: #636467;
+		font-weight: bold;
+
+		a {
+			color: #636467;
+			font-weight: bold;
+		}
+	}
+
+	.comment-meta {
+		font-size: 14px;
+		a {
+			color: #636467;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.comment {
+			.reply {
+				position: inherit;
+			}
+		}
+	}
+
+	@media (min-width: 992px) {
+		.comment {
+			padding-left: 100px;
+			.comment-wrap {
+				//min-height: 100px;
+			}
+			.avatar {
+				left: -100px;
+				width: 75px;
+				height: 75px;
+			}
+			.children {
+				.comment {
+					padding-left: 100px;
+				}
+			}
+		}
+	}
+}
+
+//== Comment Form
+
+.comment-form {
+	> .col-sm-4 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media (min-width: 992px) {
+		.comment-form-author, .comment-form-email {
+			padding-right: 15px;
+		}
+	}
+}

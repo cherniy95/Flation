@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*   
+Theme Name: Flation
+Theme URI: http://w-dev.ru/
+Description: Light pattern in a flat style adapt to any topic of the website. The site will look good on mobile devices because the template is involved Bootstrap.
+Author: cherniy95
+Author URI: http://w-dev.ru/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+*/
+
+// Импорт фреймворка и настроек к нему
+@import "partials/base";
+
+// Компоненты
+@import "partials/core";
+@import "partials/post";
+@import "partials/pagination";
+@import "partials/widgets";
+@import "partials/comments";
+
+// Vendor's
+@import "vendor/standart-wp-styles";

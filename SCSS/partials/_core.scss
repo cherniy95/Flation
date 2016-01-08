@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+body {
+	margin-top: 70px;
+}
+
+// Padding fixed navbar for admin panel
+body.admin-bar {
+	.navbar-fixed-top {
+		top: 46px;
+	}
+}
+
+@media (min-width: 782px) {
+	body.admin-bar {
+		.navbar-fixed-top {
+			top: 32px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	#wpadminbar {
+		position: fixed;
+	}
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+// Transitions effect
+a {
+	@include transition(0.2s);
+	&:hover,
+	&:active {
+		@include transition(0.2s);
+	}
+}
+
+
+.page-header {
+	background-color: #ffffff;
+	margin-top: 0;
+	padding: 20px 25px;
+	.page-title {
+		margin: 0;
+		color: #3C3C3C;
+		font-weight: bold;
+		font-size: 30px;
+	}
+}
+
+.btn-def {
+	@extend .btn;
+	@include button-variant(#ffffff, #38b49d, #38b49d);
+	@include border-radius(2px);
+	@include box-shadow(0 2px 0 0 $link-hover-color);
+	&:hover,
+	&:active {
+		@include box-shadow(0 2px 0 0 $link-hover-color);
+	}
+}
+
+.submit {
+	@extend .btn-def;
+	@extend a;
+}
+
+.search-form {
+	position: relative;
+
+	input[type="text"] {
+		background-color: #2b2b2b;
+		border: none;
+		outline: none;
+		color: #c1c0c0;
+		&:focus {
+			outline: none;
+			@include box-shadow(none);
+		}
+	}
+
+	button[type="submit"] {
+		position: absolute;
+		top: 0;
+		right: 5px;
+		height: 100%;
+		background-color: #2b2b2b;
+		border: none;
+	}
+
+	button[type="submit"]:before {
+		@include icon-set("\e003");
+	}
+}
+
+.navbar-nav {
+	.dropdown-menu {
+		background-color: $navbar-inverse-bg;
+		border-radius: 0;
+		> li {
+			> a {
+				color: $navbar-inverse-color;
+			}
+			> a:hover {
+				background-color: $navbar-inverse-link-active-bg;
+				color: $navbar-inverse-color;
+			}
+		}
+		> .active {
+			> a {
+				background-color: $navbar-inverse-link-active-bg;
+			}
+		}
+	}
+}
+
+//== Footer
+
+.site-info {
+	margin-bottom: 25px;
+	color: #c1c0c0;
+}
