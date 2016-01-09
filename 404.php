@@ -37,7 +37,7 @@ get_header(); ?>
 										) ); 
 									?>
 
-									<?php if ( flat_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+									<?php if ( flation_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 									<aside class="widget widget_categories">
 										<h3 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'flation' ); ?></h3>
 										<ul>
