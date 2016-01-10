@@ -3,7 +3,7 @@
 Contributors: automattic
 Tags: gray, black, white, green, dark, rtl-language-support, sticky-post, translation-ready, right-sidebar, one-column, two-columns, responsive-layout, custom-menu
 
-Requires at least: 4.4
+Requires at least: 4.0
 Tested up to: 4.4.1
 Stable tag: 1.0.0
 License: GPLv2 or later
