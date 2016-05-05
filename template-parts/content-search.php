@@ -23,9 +23,9 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
-		<?php if ( get_post_thumbnail_id() ) : ?>
+		<?php if ( has_post_thumbnail() ) : ?>
 			<a class="post-img" href="<?php the_permalink(); ?>">
-				<img src="<?php get_thumbnail_image_uri( get_the_ID() ); ?>" class="post-image" alt="">
+				<?php the_post_thumbnail(); ?>
 			</a>
 		<?php endif; ?>
 

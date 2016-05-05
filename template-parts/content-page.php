@@ -15,8 +15,8 @@
 			<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 
-		<?php if ( get_post_thumbnail_id() ) : ?>
-			<img src="<?php get_thumbnail_image_uri( get_the_ID() ); ?>" class="post-image" alt="">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail(); ?>
 		<?php endif; ?>
 
 		<div class="post-content">
