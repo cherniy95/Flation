@@ -22,7 +22,7 @@ function flation_setup() {
 	 * If you're building a theme based on flation, use a find and replace
 	 * to change 'flation' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'flation', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'flation' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
