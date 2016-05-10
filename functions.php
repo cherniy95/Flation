@@ -71,7 +71,7 @@ function flation_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'flation_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '#343434',
 		'default-image' => '',
 	) ) );
 
@@ -109,19 +109,6 @@ function flation_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'flation_widgets_init' );
-
-function get_thumbnail_image_uri( $post_id ) {
-
-	if ( is_null( get_post_thumbnail_id( $post_id ) ) ) {
-		return null;
-	} else {
-		$thumb_id = get_post_thumbnail_id( $post_id );
-		$image = wp_get_attachment_image_src( $thumb_id, 'full' );
-		$image = $image[0];
-		echo $image;
-	}
-
-}
 
 /**
  * Enqueue scripts and styles.

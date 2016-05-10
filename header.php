@@ -34,19 +34,21 @@
          </button>
          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand"><?php bloginfo( 'name' ); ?></a>
 			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<?php 
-					wp_nav_menu( array( 
+			
+				<?php
+					wp_nav_menu( array(
 						'menu' => 'primary',
-						'theme_location' => 'primary', 
-						'container' => false, 
-						'depth' => 2,
-						'menu_class' => 'nav navbar-nav', 
+						'theme_location' => 'primary',
+						'container' => 'div',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id' => 'navbar',
+						'depth' => 3,
+						'menu_class' => 'nav navbar-nav',
 						'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-						'walker' => new wp_bootstrap_navwalker() 
-					) ); 
+						'walker' => new wp_bootstrap_navwalker()
+					) );
 				?>
-			</div>
+
 		</div>
 	</nav>
 
